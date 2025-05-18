@@ -6,7 +6,6 @@
     <title>Inscription</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
-        /* ---- Style global ---- */
         * {
             margin: 0;
             padding: 0;
@@ -103,7 +102,7 @@
 
     <div class="form-container">
         <h1>Inscription</h1>
-        <form action="cible.php" method="POST">
+        <form action="cible.php" method="POST" enctype="multipart/form-data" >
             
             <div class="input-group">
                 <i class="fa fa-user"></i>
@@ -138,8 +137,13 @@
                     <option value="female">Femme</option>
                 </select>
             </div>
+       
+            <div class="input-group">
+                <i class="fa fa-image"></i>
+                <input type="file" name="image"  required>
+            </div>
 
-            <button type="submit">S'inscrire</button>
+              <button type="submit">S'inscrire</button>
 
         </form>
     </div>
